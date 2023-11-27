@@ -1,0 +1,36 @@
+body 
+
+    
+    /* Style for the submit button */
+    input[type=submit] {
+      background-color: green;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Style for the input fields */
+    input[type=text], input[type=email], input[type=tel] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid green;
+      background-color: #d8d8d8
+    }
+
+    /* Style for the form container */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 90px ;
+    }
+
+    .contato
+   {
+    font-size: 32px; text-align: center; color: black; padding: 5%;}
+
+   }
