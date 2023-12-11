@@ -1,4 +1,16 @@
-body 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+padding: 2%;  
+margin-top: auto; 
+min-width: 320px; 
+max-width: 850px; 
+margin: auto;} 
 
     
     /* Style for the submit button */
@@ -19,18 +31,42 @@ body
       box-sizing: border-box;
       border: none;
       border-bottom: 2px solid green;
-      background-color: #d8d8d8
+      background-color: white;
+      
     }
 
     /* Style for the form container */
-    .container {
+    .container 
+    {
       border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 90px ;
+      background-color:white;
+      padding: 30px ;
     }
 
-    .contato
-   {
-    font-size: 32px; text-align: center; color: black; padding: 5%;}
+    .chamada {text-align: center;font-size: 18px;}
 
-   }
+    
+    .contato
+    {
+    font-size: 32px; 
+    text-align: center; 
+    color: black; 
+    padding: 5%;
+  }
+
+    .termos {font-size: 8px;}
+
+
+    .footer
+    {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    color: white; 
+    text-align: center;font-size: 10px;
+    
+    
+    
+  }
+
