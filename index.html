@@ -1,37 +1,92 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Imóveis a venda  - Avaliação de Imóveis - Lançamento e imóveis prontos" />
     <title>Fale conosco</title>
-    <link rel="shortcut icon" href="et.ico" type="image/x-icon">
+    <!-- Adicione aqui o link para o seu arquivo CSS, se aplicável -->
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px; 
+            text-align: left;
+            padding: 2%;  
+            margin-top: auto; 
+            min-width: 320px; 
+            max-width: 650px; 
+            margin: auto;} 
+
+        
+
+        footer {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    margin: 1px;
+   
+    color: white; 
+    text-align: center;font-size: 10px;}
     
-    <link rel="stylesheet" href="style.css">
+    }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+    </style>
 </head>
-
-
 <body>
-    <h2 class="contato">Fale conosco</h2>
 
-    <p class="chamada">CADASTRE-SE e solicite INFORMAÇÕES.</p>
+    <h1>Formulário de Contato</h1>
+    <p>Preencha o formulário abaixo para entrar em contato.</p>
 
-  <div class="container">
-    <form action="https://formspree.io/f/xrgwwqje" method="POST">
-      <label for="name">Nome</label>
-      <input type="text" id="name" name="name" placeholder="seu nome">
+    <form action="https://formspree.io/f/xrgwwqje" method="post" enctype="multipart/form-data">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
 
-      <label for="phone">Whastapp</label>
-      <input type="tel" id="phone" name="phone" placeholder="seu whatsapp com (DDD)">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="telefone">Whatsapp:</label>
+        <input type="telefone" id="telefone" name="telefone" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="seu email">
+        <label for="message">Mensagem:(Descreva abaixo que tipo de imóvel você procura. Ex: quantos dorms, bairro, venda ou locação, faixa de preço.)</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-      <input type="submit" value="Enviar">
-      <p class="termos">*Ao informar meus dados, eu concordo com a Política de Privacidade e com os <a href="https://imoveisavendaemsantos.com/privacy-policy/" target="_blank">Termos de Uso do site</a></p>
+        
 
+        <button type="submit">Enviar</button>
     </form>
-  </div>
+
+</body>
+</html>
 
 
   <footer class="footer">Copyright(C)2023. Your Home Consultoria Imobiliária - Creci 37.912-J</footer>
