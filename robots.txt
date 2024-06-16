@@ -1,5 +1,5 @@
-#  by Mkt Digital (2024)
+#  by Mkt Digital(C)- 2023
 User-agent: *
-Disallow: 
-sitemap: https://linktree-contatos.vercel.app/sitemap.xml
+Allow: /
+
 
